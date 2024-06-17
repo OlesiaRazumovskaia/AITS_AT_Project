@@ -1,0 +1,55 @@
+.header1 {
+font-weight: bold;
+color: rgba(114, 10, 114, 0.945);
+font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.header3 {
+font-size: 20px;
+color: rgb(62, 8, 133);
+font-family: 'Comic Sans MS';
+}
+
+.definition {
+font-weight: bold;
+font-style: oblique ;
+font-size: 18px;
+color: black;
+font-family: 'Trebuchet MS';
+}
+
+.footnote {
+font-style: oblique ;
+font-size: 14px;
+color: grey;
+font-family: 'Trebuchet MS';
+}
+
+.common {
+color: black;
+font-family: 'Trebuchet MS';
+}
+
+.important {
+font-weight: bold;
+font-style: oblique ;
+font-size: 18px;
+color: rgb(182, 97, 64);
+font-family: 'Trebuchet MS';
+}
+
+.form {
+background-color: rgba(213, 217, 231, 0.103);
+  padding: 5px 10px;
+font-weight: bold;
+font-style: oblique ;
+font-size: 16px;
+font-family: 'Trebuchet MS';
+}
+
+.smallForm {
+background-color: rgba(197, 166, 166, 0.164);
+font-weight: bold;
+color: rgb(0, 0, 0);
+padding: 5px 10px;
+}
