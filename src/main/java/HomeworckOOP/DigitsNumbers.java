@@ -13,6 +13,10 @@ public class DigitsNumbers {
         System.out.println("Введите число:");
         number = scanner.nextInt();
 
+        if (number < 0) {
+            number = -number;
+        }
+
         for (int i = number; i != 0; i /= 10) {
 
             int digit = i % 10;
