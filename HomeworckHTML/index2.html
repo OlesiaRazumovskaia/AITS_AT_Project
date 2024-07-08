@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Анкета пользователя</title>
+</head>
+<body>
+<h1 class="header1">Анкета пользователя:</h1>
+<div class="form">
+    <form action="/handler.php" method="post">
+        <p><label for="name">Укажите имя:</label>
+            <input class="smallForm" type="text" id="name" name="name"/>
+        </p>
+        <p>
+            <label>
+                <input checked="checked" type="radio" value="0" name="gender">Муж
+            </label>
+            <label>
+                <input type="radio" value="1" name="gender">Жен
+            </label>
+        </p>
+        <fieldset>
+            <legend>Укажите, что вы уже использовали в работе</legend>
+            <label for="git">Git</label>
+            <input type="checkbox" id="git" name="git" value=true>
+            <label for="postman">Postman</label>
+            <input type="checkbox" id="postman" name="postman" value=true>
+            <label for="allure">Allure</label>
+            <input type="checkbox" id="allure" name="allure" value=true>
+            <label for="swagger">Swagger</label>
+            <input type="checkbox" id="swagger" name="swagger" value=true>
+            <label for="jira">Jira</label>
+            <input type="checkbox" id="jira" name="jira" value=true>
+        </fieldset>
+        <p>
+            <label for="workExperience">Укажите ваш стаж работы:</label>
+            <select class="smallForm" id="workExperience" name="workExperience">
+                <option value="None">нет опыта</option>
+                <option value="Junior">до 3 лет</option>
+                <option value="Middle">3-5 лет</option>
+                <option value="Senior">более 5 лет</option>
+            </select>
+        </p>
+        <p>
+            <label for="workAction">Выберите направления тестирования:</label>
+            <select class="smallForm" multiple size="3" id="workAction" name="workAction">
+                <option value="backend">Тестирую БЭК</option>
+                <option value="frontend">Тестирую Фронт</option>
+                <option value="auto">Пишу автотесты</option>
+            </select>
+        </p>
+        <p><label for="comment">Оставьте ваш комментарий:</label></p>
+        <textarea class="smallForm" id="comment" name="comment"></textarea>
+        <p><input type="submit"/> <input type="reset"></p>
+    </form>
+</div>
+</body>
+</html>
